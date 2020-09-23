@@ -1,3 +1,4 @@
+
 .title {
   font-family:Roboto;
 }
@@ -14,10 +15,31 @@ body{
 .main-section {
 }
 .logo {
+  position: relative;
   padding: 40px 0;
-  font: bold 24px/31px pt_serif, arial, helvetica,sans-serif;
+  padding-left: 44px;
+  font: bold 24px/31px pt_serif , arial, helvetica,sans-serif;
 }
-.menu{
+.logo__circle {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+  background: #0056EC;
+  border-radius: 50%;
+  opacity: .7;
+}
+.logo__circle_color_blue
+{
+  left: 8px;
+  top: 56%;
+  background: #C8DBFB;
+  border-radius: 50%;
+}
+.menu
+{
   display:flex;
   align-items:center;
 }
