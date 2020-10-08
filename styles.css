@@ -175,6 +175,8 @@ body{
   .main__text{
     margin-bottom:25px;
     font: 500 16px/19px roboto , arial, helvetica,sans-serif;
+    max-width: 240px;
+    margin: 0px auto 25px;
     }
   .main__button{
     font:500 14px/16px roboto;
@@ -213,12 +215,13 @@ body{
     background-color: red;
   }
   .minu{
-
+    text-decoration: none;
     display: flex;
     flex-direction: column;
     position: absolute;
     left: -10000px;
     top: 50px;
+
   }
   #checkbox:checked ~ .minu{
     left: 0px;
