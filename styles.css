@@ -106,7 +106,12 @@ body{
  }
 .main__title-text_highlight{
   background: #ECF3FF;
-
+ }
+ #checkbox{
+   display: none;
+ }
+ .minu{
+   display: none;
  }
 @media(max-width:1366px){
   .header{
@@ -144,101 +149,81 @@ body{
  }
  }
 @media (max-width:768px){
+.logo{
+  right: 93px;
+  padding: 40px 0;
+}
 .menu {
    display:none;
   }
   .header{
-  margin-bottom:28px;
+  margin-bottom:7px;
   }
   .main{
   text-align: center;
   padding: 74% 0 0;
   background-size: 74%;
   background-position: top center;
+  background: top right no-repeat url(img/765.svg);
+  margin-left: 0px;
   }
   .main__title{
-    margin-bottom:44px;
+    margin-bottom:34px;
     font: 700 30px/39px pt-serif;
+    padding-top: 37px;
   }
   .main__text{
     margin-bottom:25px;
     font: 500 16px/19px roboto , arial, helvetica,sans-serif;
-  }
+    }
   .main__button{
     font:500 14px/16px roboto;
   }
   .logo_2{
     display: none;
   }
-.container{
-  margin:200px auto;
-  width: 320px;
-  background: #E5E5E5;
-  position: relative;
-  color: black;
-  text-align: center;
-  height: 40px;
-}
-#chek-menu{
-  display: none;
-}
-.label{
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-  z-index: 2;
-  line-height: 40px;
-}
-.burger-line{
-  position:absolute;
-  top:8px;
-  right: 10px;
-  width:35px;
-  height: 2px;
-  background-color:#0056EC;
-  transition: .5s all;
-}
-.second{
-  top: 18px;
-}
-.third{
-  top:28px;
-}
-.main-menu{
-  display: block;
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  left:0;
-  transform: translateY(100%);
-  max-height: none;
-  font-size: none;
-  overflow: hidden;
-  transition: .5s all;
-}
-.menu__item1{
-  display: block;
-  width: 100%;
-  padding: 10px;
-  color: white;
-  text-decoration: none;
-  border-top: 1px solid rgba(255,255,255,3);
-  background-color: #000;
-}
-#chek-menu:checked ~ .main-menu{
-  max-height: 500px;
-  font-size: 16px;
-}
-#chek-menu:checked ~ .first{
-  transform: rotate(45deg);
-}
-#chek-menu:checked ~ .second{
-  display: none;
-}
-#chek-menu:checked ~ .third{
-  transform: rotate(-45deg);
-}
+  #checkbox{
+    display:none;
+  }
+  .first{
+    position: absolute;
+   height: 3px;
+   width: 25px;
+   background: #0056EC;
+   top: 32px;
+   right: 24px;
+  }
+  .second{
+    position: absolute;
+    height: 3px;
+   width: 25px;
+   background: #0056EC;
+   top: 39px;
+   right: 24px;
+   }
+  .therd{
+    position: absolute;
+    height: 3px;
+   width: 25px;
+   background: #0056EC;
+   top: 46px;
+   right: 24px;
+  }
+  #checkbox:checked ~ label .first{
+    background-color: red;
+  }
+  .minu{
+
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: -10000px;
+    top: 50px;
+  }
+  #checkbox:checked ~ .minu{
+    left: 0px;
+    width: 100%;
+    height: 100%;
+
+    background: #E5E5E5;
+  }
