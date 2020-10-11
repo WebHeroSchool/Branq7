@@ -45,6 +45,7 @@ body{
   border-radius: 50%;
 }
 .menu{
+  margin-right: 12px;
   margin-left: auto;
   display:flex;
   align-items:center;
@@ -81,7 +82,7 @@ body{
 .main {
   padding: 0 63% 160px 0;
   background: top right no-repeat url(img/1920.svg);
-  background-position: 100% 24%;
+  background-position: 100% 40%;
 
  }
 .main__title{
@@ -150,29 +151,35 @@ body{
  }
  @media(max-width:1024px){
    .wrapper{
-     margin: 0;
-     width: 96%;
+     margin: 0 auto;
+     width: 92%;
+   }
+   .header{
+     padding-left: 0;
    }
    .menu{
      padding-right: 4px;
-     padding-top: 9px;}
+     padding-top: 9px;
+   }
    .main{
      background: top right no-repeat url(img/1024.svg);
+     margin-left: 4px;
    }
-   .logo{
-     padding-left: 10px;
-   }
-   .logo__circle{
-     right: 161px;
-   }
-   .logo__circle_color_blue{
-     right: 153px;
-   }
+   .main__text{
+     font: 500 18px/21px roboto , arial, helvetica,sans-serif;
+     margin-bottom: 44px;
+     max-width: 355px;
+    }
+   .main__button {
+    padding: 13px 16px;
+  }
+
  }
 @media (max-width:768px){
 .logo{
-  right: 93px;
-  padding: 40px 0;
+  left: 10px;
+  padding: 25px 0;
+  top: 14px;
 }
 .menu {
    display:none;
@@ -183,13 +190,11 @@ body{
   .main{
   text-align: center;
   padding: 74% 0 0;
-  background-size: 74%;
-  background-position: top center;
   background: top right no-repeat url(img/765.svg);
-  margin-left: 0px;
+  background-position: 44% 9%;
   }
   .main__title{
-    margin-bottom:34px;
+    margin-bottom:31px;
     font: 700 30px/39px pt-serif;
     padding-top: 37px;
   }
@@ -201,6 +206,7 @@ body{
     }
   .main__button{
     font:500 14px/16px roboto;
+    padding: 14px 20px;
   }
   .logo_2{
     display: none;
@@ -270,6 +276,10 @@ body{
 .menu__item{
 
   font: 500 30px/35px roboto;
+  margin-bottom: 25px;
+  margin-left: 23px;
+
 }
 .menu__item:last-child{
-  margin-bottom: : 0;
+  margin-right: 27px;
+}
