@@ -148,6 +148,27 @@ body{
     padding-top: 15px;
  }
  }
+ @media(max-width:1024px){
+   .wrapper{
+     margin: 0;
+     width: 96%;
+   }
+   .menu{
+     padding-right: 4px;
+     padding-top: 9px;}
+   .main{
+     background: top right no-repeat url(img/1024.svg);
+   }
+   .logo{
+     padding-left: 10px;
+   }
+   .logo__circle{
+     right: 161px;
+   }
+   .logo__circle_color_blue{
+     right: 153px;
+   }
+ }
 @media (max-width:768px){
 .logo{
   right: 93px;
@@ -193,7 +214,9 @@ body{
    width: 25px;
    background: #0056EC;
    top: 32px;
+   z-index: 1;
    right: 24px;
+   transition-duration: .25s;
   }
   .second{
     position: absolute;
@@ -202,6 +225,8 @@ body{
    background: #0056EC;
    top: 39px;
    right: 24px;
+   z-index: 2;
+   transition-duration: .25s;
    }
   .therd{
     position: absolute;
@@ -210,23 +235,41 @@ body{
    background: #0056EC;
    top: 46px;
    right: 24px;
+   z-index: 3;
+   transition-duration: .25s;
   }
   #checkbox:checked ~ label .first{
-    background-color: red;
+    margin-top: 7px;
+    transform: rotate(45deg);
+    transition-duration: .25s;
   }
-  .minu{
+  #checkbox:checked ~ label .second{
+    display: none;
+  }
+  #checkbox:checked ~ label .therd{
+    margin-top: -7px;
+    transform: rotate(-45deg);
+    transition-duration: .25s
+  }
+  .menu{
     text-decoration: none;
     display: flex;
     flex-direction: column;
     position: absolute;
     left: -10000px;
-    top: 50px;
-
+    top: 0px;
+    background: #fff;
+    padding-top: 185px;
   }
-  #checkbox:checked ~ .minu{
+  #checkbox:checked ~ .menu{
     left: 0px;
     width: 100%;
     height: 100%;
-
-    background: #E5E5E5;
+    font: 500 30px/35px roboto;
   }
+.menu__item{
+
+  font: 500 30px/35px roboto;
+}
+.menu__item:last-child{
+  margin-bottom: : 0;
